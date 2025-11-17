@@ -312,28 +312,31 @@ body {
     color: #ffffff;
 }
 
-/*------------------------------------------
-Mobile Responsiveness
---------------------------------------------*/
+/* ------------------------------
+   Mobile Responsiveness
+   ------------------------------ */
 @media (max-width: 768px) {
 
     /* HERO SECTION */
     .hero {
         padding: 40px 20px;
         display: flex;
-        flex-direction: column;
+        flex-direction: column; /* stack text above images */
         text-align: center;
         gap: 30px;
     }
+
     .hero-content h1 {
         font-size: 2.4rem;
     }
+
     .hero-content p {
         font-size: 1.1rem;
         width: 100%;
     }
+
     .hero-images {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr); /* 2 images per row */
         gap: 15px;
     }
 
@@ -342,6 +345,7 @@ Mobile Responsiveness
         padding: 60px 20px;
         text-align: center;
     }
+
     .about p {
         width: 100%;
         font-size: 1rem;
@@ -349,12 +353,14 @@ Mobile Responsiveness
 
     /* OUR WORK SECTION */
     .work-gallery {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr); /* 2 per row on mobile */
         gap: 12px;
     }
+
     .work-gallery img {
         height: 180px;
     }
+
     .work-gallery p {
         font-size: 0.9rem;
     }
@@ -363,6 +369,7 @@ Mobile Responsiveness
     .services {
         text-align: center;
     }
+
     .service-card {
         padding: 25px;
         margin-bottom: 30px;
@@ -373,11 +380,92 @@ Mobile Responsiveness
         padding: 50px 20px;
         text-align: center;
     }
+
     .contact h2 {
         font-size: 1.8rem;
     }
+
     .cta-btn {
+        width: 100%; /* full width button */
+        padding: 14px 0;
+        font-size: 1.1rem;
+    }
+}
+/* ------------------------------
+   Mobile Responsiveness
+   ------------------------------ */
+@media (max-width: 768px) {
+
+    /* HERO SECTION */
+    .hero {
+        padding: 40px 20px;
+        display: flex;
+        flex-direction: column; /* stack text above images */
+        text-align: center;
+        gap: 30px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.4rem;
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
         width: 100%;
+    }
+
+    .hero-images {
+        grid-template-columns: repeat(2, 1fr); /* 2 images per row */
+        gap: 15px;
+    }
+
+    /* ABOUT SECTION */
+    .about {
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    .about p {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    /* OUR WORK SECTION */
+    .work-gallery {
+        grid-template-columns: repeat(2, 1fr); /* 2 per row on mobile */
+        gap: 12px;
+    }
+
+    .work-gallery img {
+        height: 180px;
+    }
+
+    .work-gallery p {
+        font-size: 0.9rem;
+    }
+
+    /* SERVICES SECTION */
+    .services {
+        text-align: center;
+    }
+
+    .service-card {
+        padding: 25px;
+        margin-bottom: 30px;
+    }
+
+    /* CONTACT SECTION */
+    .contact {
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+    .contact h2 {
+        font-size: 1.8rem;
+    }
+
+    .cta-btn {
+        width: 100%; /* full width button */
         padding: 14px 0;
         font-size: 1.1rem;
     }
