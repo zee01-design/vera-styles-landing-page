@@ -76,19 +76,24 @@ body {
 }
 
 
+/* Main button style */
 .cta-btn {
-    padding: 14px 40px;
-    border: 1px solid #ffffff;
-    background: transparent;
-    color: #ffffff;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    cursor: pointer;
-    border-radius: 0;
-    transition: all 0.3s ease;
+    width: 100%;
+    padding: 14px 0;
+    font-size: 1.1rem;
     text-decoration: none;
+    display: inline-block;
+    line-height: 1.4;
+    min-height: 48px;
+    box-sizing: border-box;
+}
+
+/* Contact section button tweak */
+#contact .cta-btn {
+    width: 80%;
+    margin: 20px auto;
+    padding: 12px 20px;
+    font-size: 1rem;
 }
 
 .cta-btn:hover {
@@ -294,23 +299,26 @@ body {
     color: #000000;
 }
 
-.contact-section .cta-btn {
-    padding: 14px 40px;
-    border: 1px solid #000000;
-    background: transparent;
-    color: #000000;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: all 0.3s ease;
+/* Main button style */
+.cta-btn {
+    width: 100%;
+    padding: 14px 0;
+    font-size: 1.1rem;
+    text-decoration: none;
+    display: inline-block;
+    line-height: 1.4;
+    min-height: 48px;
+    box-sizing: border-box;
 }
 
-.contact-section .cta-btn:hover {
-    background: #000000;
-    color: #ffffff;
+/* Contact section button tweak */
+#contact .cta-btn {
+    width: 80%;
+    margin: 20px auto;
+    padding: 12px 20px;
+    font-size: 1rem;
 }
+
 
 /* ------------------------------
    Mobile Responsiveness
@@ -384,12 +392,6 @@ body {
     .contact h2 {
         font-size: 1.8rem;
     }
-
-    .cta-btn {
-        width: 100%; /* full width button */
-        padding: 14px 0;
-        font-size: 1.1rem;
-    }
 }
    
 /* ========= MOBILE FIXES ========= */
@@ -411,13 +413,6 @@ body {
         font-size: 1rem;
         text-align: center;
         padding: 0 15px;
-    }
-
-    .hero .btn {
-        width: 80%;
-        margin: 20px auto;
-        font-size: 1rem;
-        padding: 12px 20px;
     }
 
     /* Fix hero image grid */
@@ -472,21 +467,6 @@ body {
         font-size: 1rem;
         text-align: center;
     }
-
-    /* Book a session button inside contact */
-    #contact .btn {
-        width: 80%;
-        margin: 20px auto;
-        font-size: 1rem;
-        padding: 12px 20px;
-    }
-    .book-btn { 
-       padding: 12px 24px;
-       line-height: 1.4;
-       height: auto;
-       min-height: 45px;
-       box-sizing: border-box;
-    }
    
   /* HERO IMAGES — Mobile layout */
 .hero-images {
@@ -504,6 +484,7 @@ body {
     border-radius: 3px;
 }
 }
+
 
 
 
