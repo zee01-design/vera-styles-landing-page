@@ -480,12 +480,13 @@ body {
         font-size: 1rem;
         padding: 12px 20px;
     }
-     .book-btn { 
+    .book-btn { 
        padding: 12px 24px;
        line-height: 1.4;
        height: auto;
        min-height: 45px;
        box-sizing: border-box;
+    }
    
   /* HERO IMAGES — Mobile layout */
 .hero-images {
@@ -503,6 +504,7 @@ body {
     border-radius: 3px;
 }
 }
+
 
 
 
