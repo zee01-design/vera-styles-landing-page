@@ -102,24 +102,6 @@ body {
 }
 
 
-/* ------------ SHARED CTA BUTTON ------------ */
-.cta-button {
-  margin-top: 25px;
-  padding: 12px 30px;
-  background-color: #000;
-  color: white;
-  border: none;
-  border-radius: 30px;
-  font-size: 1.1rem;
-  cursor: pointer;
-  transition: 0.3s ease;
-  font-weight: 500;
-}
-
-.cta-button:hover {
-  background-color: #333;
-}
-
 /* OUR WORK SECTION */
 .our-work {
     background-color: #ffffff;
@@ -299,25 +281,81 @@ body {
     color: #000000;
 }
 
-/* Main button style */
-.cta-btn {
-    width: 100%;
-    padding: 14px 0;
-    font-size: 1.1rem;
-    text-decoration: none;
+/* ============================
+   CTA BUTTONS — NEW CLEAN SYSTEM
+   ============================ */
+
+/* ---------- HERO BUTTON ---------- */
+.cta-btn-hero {
     display: inline-block;
-    line-height: 1.4;
-    min-height: 48px;
-    box-sizing: border-box;
+    padding: 14px 40px;
+    background-color: #000000;      /* black background */
+    color: #ffffff;                 /* white text */
+    border: 1px solid #ffffff;      /* thin white border */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 0;               /* straight edges */
 }
 
-/* Contact section button tweak */
-#contact .cta-btn {
-    width: 80%;
-    margin: 20px auto;
-    padding: 12px 20px;
-    font-size: 1rem;
+/* Hover effect */
+.cta-btn-hero:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border-color: #ffffff;
 }
+
+
+/* ---------- CONTACT BUTTON ---------- */
+.cta-btn-contact {
+    display: inline-block;
+    padding: 14px 40px;
+    background-color: #ffffff;      /* white background */
+    color: #000000;                 /* black text */
+    border: 1px solid #000000;      /* thin black border */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 0;               /* straight edges */
+}
+
+/* Hover effect */
+.cta-btn-contact:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+
+/* Make sure both are centered nicely */
+.contact-section .cta-btn-contact {
+    margin-top: 20px;
+}
+
+
+/* ============================
+   FIX BLUE PHONE NUMBER
+   ============================ */
+
+.contact-item p {
+    color: #333333 !important;
+    text-decoration: none !important;
+}
+
+.contact-item p a {
+    color: #333333 !important;
+    text-decoration: none !important;
+    pointer-events: none;   /* removes phone link clicking blue style */
+}
+
+
 
 
 /* ------------------------------
@@ -484,6 +522,7 @@ body {
     border-radius: 3px;
 }
 }
+
 
 
 
